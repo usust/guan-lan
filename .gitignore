@@ -1,0 +1,83 @@
+# 操作系统文件
+# 不带路径前缀，忽略所有层级目录中的同名文件
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+
+# 编辑器个人配置与临时文件
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.swp
+*.swo
+*~
+
+# Node.js 依赖、依赖备份与包管理器缓存
+node_modules/
+node_modules.backup*/
+.npm/
+.pnpm-store/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# Vue / Vite 构建产物与缓存
+dist/
+/frontend/dist-ssr/
+.vite/
+.vitest/
+*.tsbuildinfo
+.eslintcache
+.stylelintcache
+
+# 测试覆盖率与报告
+coverage/
+.nyc_output/
+/frontend/test-results/
+/frontend/playwright-report/
+/backend/coverage.out
+/backend/coverage.html
+*.test
+
+# Go 本地构建产物与工作区配置
+/backend/bin/
+/backend/tmp/
+/backend/cmd/huashan/huashan
+/backend/cmd/huashan/huashan.exe
+/backend/huashan
+/backend/huashan.exe
+go.work
+go.work.sum
+# internal/runtime/gateway-linux-* 被 go:embed 引用，需要保留。
+
+# 本地环境配置（保留可提交的示例文件）
+.env
+.env.*
+!.env.example
+!.env.*.example
+!.env.sample
+!.env.template
+config.ini
+!config.example.ini
+
+# 日志与运行时文件
+logs/
+*.log
+*.pid
+*.pid.lock
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3-wal
+*.sqlite3-shm
