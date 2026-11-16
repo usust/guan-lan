@@ -63,7 +63,7 @@ go.work.sum
 !.env.*.example
 !.env.sample
 !.env.template
-config.ini
+# config.ini
 !config.example.ini
 
 # 日志与运行时文件
